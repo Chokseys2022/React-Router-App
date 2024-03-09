@@ -1,15 +1,15 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Currencies() {
   const currencies = [
-    { name: 'Bitcoin', symbol: 'BTC' },
-    { name: 'Litecoin', symbol: 'LTC' },
-    { name: 'Ethereum', symbol: 'ETH' },
-    { name: 'Ethereum Classic', symbol: 'ETC' },
-    { name: 'Stellar Lumens', symbol: 'XLM' },
-    { name: 'Dash', symbol: 'DASH' },
-    { name: 'Ripple', symbol: 'XRP' },
-    { name: 'Zcash', symbol: 'ZEC' },
+    { name: "Bitcoin", symbol: "BTC" },
+    { name: "Litecoin", symbol: "LTC" },
+    { name: "Ethereum", symbol: "ETH" },
+    { name: "Ethereum Classic", symbol: "ETC" },
+    { name: "Stellar Lumens", symbol: "XLM" },
+    { name: "Dash", symbol: "DASH" },
+    { name: "Ripple", symbol: "XRP" },
+    { name: "Zcash", symbol: "ZEC" },
   ];
 
   let coinList = currencies.map((coin) => {
@@ -20,7 +20,7 @@ function Currencies() {
     );
   });
 
-  return <div>{coinList}</div>;
+  return <div className="currencies">{coinList}</div>;
 }
 
 export default Currencies;
